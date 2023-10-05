@@ -62,7 +62,52 @@ namespace dotnetmicroserviceone.Controllers
         }
 
         [HttpPost]
-        public async Task
+        public async Task<ActionResult> AddArticle(Article article)
+        {
+            try
+            {
+                _context.articles.Add(article);
+                if(await _context.SaveChangesAsync())
+                {
+                    return Ok();
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+        }
+
+        [HttpDelete("id")]
+        public async Task<ActionResult> DeleteArticle(int id)
+        {
+            try
+            {
+                var data=await _context.articles.Where(a=>a.ArticleID==id).FirstOrDefaultAsync();
+                if(data!=null)
+                {
+                    _context.articles.Remove(data);
+                    if(await _context.SaveChangesAsync()>0)
+                    {
+                        return Ok();
+                    }
+                    else
+                    {
+                        return NotFound()
+                    }
+                }
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+        }
 
     }
 }
