@@ -1,7 +1,8 @@
-"Routes": [
+{
+    "Routes": [
     {
         "DownstreamPathTemplate":"/article/{everything}",
-        "DownstreamScheme":"http",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -9,11 +10,11 @@
             }
         ],
         "UpstreamPathTemplate":"/gateway/Article/{everything}",
-        "UpstreamHttpMethod":"Get",
+        "UpstreamHttpMethod":["GET","POST"]
     },
     {
         "DownstreamPathTemplate":"/article/{everything}",
-        "DownstreamScheme":"http",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -21,11 +22,11 @@
             }
         ],
         "UpstreamPathTemplate":"/gateway/Article/{id}",
-        "UpstreamHttpMethod":"Get",
+        "UpstreamHttpMethod":"GET"
     },
     {
         "DownstreamPathTemplate":"/Review/{everything}",
-        "DownstreamScheme":"http",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -33,11 +34,11 @@
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review/{everything}",
-        "UpstreamHttpMethod":"Get",
+        "UpstreamHttpMethod":"Get"
     },
     {
         "DownstreamPathTemplate":"/Review/{everything}",
-        "DownstreamScheme":"http",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -45,11 +46,11 @@
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review/{everything}",
-        "UpstreamHttpMethod":["GET","POST"],
+        "UpstreamHttpMethod":["GET","POST"]
     },
     {
         "DownstreamPathTemplate":"/Review/{everything}",
-        "DownstreamScheme":"http",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -57,11 +58,11 @@
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review/ReviewerNames",
-        "UpstreamHttpMethod":["GET","POST"],
+        "UpstreamHttpMethod":"GET"
     },
     {
         "DownstreamPathTemplate":"/Review/{everything}",
-        "DownstreamScheme":"http",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -69,11 +70,12 @@
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review/{id}",
-        "UpstreamHttpMethod":"Delete",
+        "UpstreamHttpMethod":"DELETE"
     }
 
 
 ],
 "GlobalConfiguration":{
-
+    "BaseUrl":"https://ide-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io/proxy/5161/"
+}
 }
