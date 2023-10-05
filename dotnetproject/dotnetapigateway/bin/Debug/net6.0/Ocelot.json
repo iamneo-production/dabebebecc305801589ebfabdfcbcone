@@ -2,7 +2,7 @@
     "Routes": [
     {
         "DownstreamPathTemplate":"/api/Article",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -14,7 +14,7 @@
     },
     {
         "DownstreamPathTemplate":"/api/Article",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -26,7 +26,7 @@
     },
     {
         "DownstreamPathTemplate":"/api/Review",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -38,7 +38,7 @@
     },
     {
         "DownstreamPathTemplate":"/api/Review",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -50,7 +50,7 @@
     },
     {
         "DownstreamPathTemplate":"/api/Review/",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -62,7 +62,7 @@
     },
     {
         "DownstreamPathTemplate":"/api/Review",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",

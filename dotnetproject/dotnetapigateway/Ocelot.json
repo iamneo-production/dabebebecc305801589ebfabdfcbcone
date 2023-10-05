@@ -2,7 +2,7 @@
     "Routes": [
     {
         "DownstreamPathTemplate":"/api/Article",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -13,8 +13,8 @@
         "UpstreamHttpMethod":["POST","GET"]
     },
     {
-        "DownstreamPathTemplate":"/api/Article",
-        "DownstreamScheme":"https",
+        "DownstreamPathTemplate":"/api/Article/{id}",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -22,23 +22,12 @@
             }
         ],
         "UpstreamPathTemplate":"/gateway/Article/{id}",
-        "UpstreamHttpMethod":"GET"
+        "UpstreamHttpMethod":["DELETE","GET"]
     },
+    
     {
         "DownstreamPathTemplate":"/api/Review",
-        "DownstreamScheme":"https",
-        "DownstreamHostAndPorts":[
-            {
-                "Host":"localhost",
-                "Port":8081
-            }
-        ],
-        "UpstreamPathTemplate":"/gateway/Review",
-        "UpstreamHttpMethod":"Get"
-    },
-    {
-        "DownstreamPathTemplate":"/api/Review",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -49,8 +38,8 @@
         "UpstreamHttpMethod":["POST","GET"]
     },
     {
-        "DownstreamPathTemplate":"/api/Review/",
-        "DownstreamScheme":"https",
+        "DownstreamPathTemplate":"/api/Review/ReviewerNames",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -61,8 +50,8 @@
         "UpstreamHttpMethod":"GET"
     },
     {
-        "DownstreamPathTemplate":"/api/Review",
-        "DownstreamScheme":"https",
+        "DownstreamPathTemplate":"/api/Review/{id}",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
@@ -70,7 +59,7 @@
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review/{id}",
-        "UpstreamHttpMethod":["DELETE"]
+        "UpstreamHttpMethod":"DELETE"
     }
 
 
