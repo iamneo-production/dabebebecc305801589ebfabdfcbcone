@@ -1,4 +1,4 @@
-"Routes":[
+"Routes": [
     {
         "DownstreamPathTemplate":"/article/{everything}",
         "DownstreamScheme":"http",
@@ -10,5 +10,70 @@
         ],
         "UpstreamPathTemplate":"/gateway/Article/{everything}",
         "UpstreamHttpMethod":"Get",
+    },
+    {
+        "DownstreamPathTemplate":"/article/{everything}",
+        "DownstreamScheme":"http",
+        "DownstreamHostAndPorts":[
+            {
+                "Host":"localhost",
+                "Port":8080
+            }
+        ],
+        "UpstreamPathTemplate":"/gateway/Article/{id}",
+        "UpstreamHttpMethod":"Get",
+    },
+    {
+        "DownstreamPathTemplate":"/Review/{everything}",
+        "DownstreamScheme":"http",
+        "DownstreamHostAndPorts":[
+            {
+                "Host":"localhost",
+                "Port":8081
+            }
+        ],
+        "UpstreamPathTemplate":"/gateway/Review/{everything}",
+        "UpstreamHttpMethod":"Get",
+    },
+    {
+        "DownstreamPathTemplate":"/Review/{everything}",
+        "DownstreamScheme":"http",
+        "DownstreamHostAndPorts":[
+            {
+                "Host":"localhost",
+                "Port":8081
+            }
+        ],
+        "UpstreamPathTemplate":"/gateway/Review/{everything}",
+        "UpstreamHttpMethod":["GET","POST"],
+    },
+    {
+        "DownstreamPathTemplate":"/Review/{everything}",
+        "DownstreamScheme":"http",
+        "DownstreamHostAndPorts":[
+            {
+                "Host":"localhost",
+                "Port":8081
+            }
+        ],
+        "UpstreamPathTemplate":"/gateway/Review/ReviewerNames",
+        "UpstreamHttpMethod":["GET","POST"],
+    },
+    {
+        "DownstreamPathTemplate":"/Review/{everything}",
+        "DownstreamScheme":"http",
+        "DownstreamHostAndPorts":[
+            {
+                "Host":"localhost",
+                "Port":8081
+            }
+        ],
+        "UpstreamPathTemplate":"/gateway/Review/{id}",
+        "UpstreamHttpMethod":"Delete",
     }
-]
+
+
+],
+"GlobalConfiguration":{
+
+}
