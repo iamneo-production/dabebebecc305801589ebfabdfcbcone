@@ -5,19 +5,19 @@
         "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io/",
+                "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
                 "Port":8080
             }
         ],
         "UpstreamPathTemplate":"/gateway/Article",
-        "UpstreamHttpMethod":["GET","POST"]
+        "UpstreamHttpMethod":["GET"]
     },
     {
         "DownstreamPathTemplate":"/Article",
         "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io/",
+                "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
                 "Port":8080
             }
         ],
@@ -29,7 +29,7 @@
         "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io/",
+                "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
                 "Port":8081
             }
         ],
@@ -41,19 +41,19 @@
         "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io/",
+                "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
                 "Port":8081
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review",
-        "UpstreamHttpMethod":["GET","POST"]
+        "UpstreamHttpMethod":["GET"]
     },
     {
         "DownstreamPathTemplate":"/Review",
         "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io/",
+                "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
                 "Port":8081
             }
         ],
@@ -65,7 +65,7 @@
         "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io/",
+                "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
                 "Port":8081
             }
         ],
@@ -76,7 +76,7 @@
 
 ],
 "GlobalConfiguration":{
-    "BaseUrl":"https://5161-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io/"
+    "BaseUrl":"https://ide-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io/proxy/5161/"
 }
 
 }
