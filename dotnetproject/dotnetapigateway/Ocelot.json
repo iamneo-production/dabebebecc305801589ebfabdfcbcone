@@ -2,10 +2,10 @@
     "Routes": [
     {
         "DownstreamPathTemplate":"/article",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
+                "Host":"0.0.0.0",
                 "Port":5161
             }
         ],
@@ -14,10 +14,10 @@
     },
     {
         "DownstreamPathTemplate":"/article",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
+                "Host":"0.0.0.0",
                 "Port":5161
             }
         ],
@@ -26,10 +26,10 @@
     },
     {
         "DownstreamPathTemplate":"/Review",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
+                "Host":"0.0.0.0",
                 "Port":5161
             }
         ],
@@ -38,10 +38,10 @@
     },
     {
         "DownstreamPathTemplate":"/Review",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
+                "Host":"0.0.0.0",
                 "Port":5161
             }
         ],
@@ -50,10 +50,10 @@
     },
     {
         "DownstreamPathTemplate":"/Review",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
+                "Host":"0.0.0.0",
                 "Port":5161
             }
         ],
@@ -62,10 +62,10 @@
     },
     {
         "DownstreamPathTemplate":"/Review",
-        "DownstreamScheme":"https",
+        "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
+                "Host":"0.0.0.0",
                 "Port":5161
             }
         ],
