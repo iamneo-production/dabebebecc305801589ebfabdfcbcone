@@ -67,7 +67,7 @@ namespace dotnetmicroserviceone.Controllers
             try
             {
                 _context.articles.Add(article);
-                if(await _context.SaveChangesAsync())
+                if(await _context.SaveChangesAsync()>0)
                 {
                     return Ok();
                 }
@@ -98,8 +98,12 @@ namespace dotnetmicroserviceone.Controllers
                     }
                     else
                     {
-                        return NotFound()
+                        return BadRequest();
                     }
+                }
+                else
+                {
+                    return NotFound();
                 }
             }
             catch (System.Exception)
