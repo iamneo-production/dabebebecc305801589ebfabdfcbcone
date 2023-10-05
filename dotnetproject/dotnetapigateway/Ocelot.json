@@ -1,23 +1,23 @@
 {
     "Routes": [
     {
-        "DownstreamPathTemplate":"/article",
+        "DownstreamPathTemplate":"/Article",
         "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"0.0.0.0",
-                "Port":5161
+                "Host":"dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io/",
+                "Port":8080
             }
         ],
         "UpstreamPathTemplate":"/gateway/Article",
         "UpstreamHttpMethod":["GET","POST"]
     },
     {
-        "DownstreamPathTemplate":"/article",
+        "DownstreamPathTemplate":"/Article",
         "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
-                "Host":"0.0.0.0",
+                "Host":"",
                 "Port":5161
             }
         ],
@@ -74,6 +74,9 @@
     }
 
 
-]
+],
+"GlobalConfiguration":{
+    "BaseUrl":"https://localhost:5161"
+}
 
 }
