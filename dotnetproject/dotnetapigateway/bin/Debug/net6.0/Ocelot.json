@@ -13,7 +13,7 @@
         "UpstreamHttpMethod":["POST","GET"]
     },
     {
-        "DownstreamPathTemplate":"/api/Article",
+        "DownstreamPathTemplate":"/api/Article/{id}",
         "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
@@ -22,20 +22,9 @@
             }
         ],
         "UpstreamPathTemplate":"/gateway/Article/{id}",
-        "UpstreamHttpMethod":"GET"
+        "UpstreamHttpMethod":["DELETE","GET"]
     },
-    {
-        "DownstreamPathTemplate":"/api/Review",
-        "DownstreamScheme":"http",
-        "DownstreamHostAndPorts":[
-            {
-                "Host":"localhost",
-                "Port":8081
-            }
-        ],
-        "UpstreamPathTemplate":"/gateway/Review",
-        "UpstreamHttpMethod":"Get"
-    },
+    
     {
         "DownstreamPathTemplate":"/api/Review",
         "DownstreamScheme":"http",
@@ -49,7 +38,7 @@
         "UpstreamHttpMethod":["POST","GET"]
     },
     {
-        "DownstreamPathTemplate":"/api/Review/",
+        "DownstreamPathTemplate":"/api/Review/ReviewerNames",
         "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
@@ -61,7 +50,7 @@
         "UpstreamHttpMethod":"GET"
     },
     {
-        "DownstreamPathTemplate":"/api/Review",
+        "DownstreamPathTemplate":"/api/Review/{id}",
         "DownstreamScheme":"http",
         "DownstreamHostAndPorts":[
             {
@@ -70,7 +59,7 @@
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review/{id}",
-        "UpstreamHttpMethod":["DELETE"]
+        "UpstreamHttpMethod":"DELETE"
     }
 
 
