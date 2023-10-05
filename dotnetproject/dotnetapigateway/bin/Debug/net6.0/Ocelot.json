@@ -1,72 +1,72 @@
 {
     "Routes": [
     {
-        "DownstreamPathTemplate":"/article/{everything}",
-        "DownstreamScheme":"http",
+        "DownstreamPathTemplate":"/article",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
-                "Port":8080
+                "Port":5161
             }
         ],
-        "UpstreamPathTemplate":"/gateway/Article/{everything}",
+        "UpstreamPathTemplate":"/gateway/Article",
         "UpstreamHttpMethod":["GET","POST"]
     },
     {
-        "DownstreamPathTemplate":"/article/{everything}",
-        "DownstreamScheme":"http",
+        "DownstreamPathTemplate":"/article",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
-                "Port":8080
+                "Port":5161
             }
         ],
         "UpstreamPathTemplate":"/gateway/Article/{id}",
         "UpstreamHttpMethod":"GET"
     },
     {
-        "DownstreamPathTemplate":"/Review/{everything}",
-        "DownstreamScheme":"http",
+        "DownstreamPathTemplate":"/Review",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
-                "Port":8081
+                "Port":5161
             }
         ],
-        "UpstreamPathTemplate":"/gateway/Review/{everything}",
+        "UpstreamPathTemplate":"/gateway/Review",
         "UpstreamHttpMethod":"Get"
     },
     {
-        "DownstreamPathTemplate":"/Review/{everything}",
-        "DownstreamScheme":"http",
+        "DownstreamPathTemplate":"/Review",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
-                "Port":8081
+                "Port":5161
             }
         ],
-        "UpstreamPathTemplate":"/gateway/Review/{everything}",
+        "UpstreamPathTemplate":"/gateway/Review",
         "UpstreamHttpMethod":["GET","POST"]
     },
     {
-        "DownstreamPathTemplate":"/Review/{everything}",
-        "DownstreamScheme":"http",
+        "DownstreamPathTemplate":"/Review",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
-                "Port":8081
+                "Port":5161
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review/ReviewerNames",
         "UpstreamHttpMethod":"GET"
     },
     {
-        "DownstreamPathTemplate":"/Review/{everything}",
-        "DownstreamScheme":"http",
+        "DownstreamPathTemplate":"/Review",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"localhost",
-                "Port":8081
+                "Port":5161
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review/{id}",
@@ -74,8 +74,6 @@
     }
 
 
-],
-"GlobalConfiguration":{
-    "BaseUrl":"http://api-gateway:5161"
-}
+]
+
 }
