@@ -39,12 +39,12 @@ namespace dotnetmicroservicetwo.Controllers
             }
         }
 
-        [HttpGet("id")]
-        public async Task<ActionResult<IEnumerable<string>> Get()
+        [HttpGet("Revi")]
+        public async Task<ActionResult<IEnumerable<string>>> Get()
         {
             try
             {
-                var data =await _context.articles.FirstOrDefaultAsync(u=>u.ArticleID==id);
+                var data =await _context.reviews.Select(u=>u.ReviewerName).ToListAsync();
                 if(data!=null)
                 {
                     return Ok(data);
