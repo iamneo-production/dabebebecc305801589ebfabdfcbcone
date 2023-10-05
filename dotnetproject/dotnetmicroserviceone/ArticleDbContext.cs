@@ -9,6 +9,8 @@ namespace dotnetmicroserviceone
 {
     public class ArticleDbContext:DbContext
     {
-        
+        public ArticleDbContext(DbContextOptions<ArticleDbContext> options ):base(options){}
+
+        public DbSet<Article> articles{get;set;}
     }
 }
