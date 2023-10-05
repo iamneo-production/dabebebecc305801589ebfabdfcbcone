@@ -39,7 +39,7 @@ namespace dotnetmicroservicetwo.Controllers
             }
         }
 
-        [HttpGet("Revi")]
+        [HttpGet("ReviewerNames")]
         public async Task<ActionResult<IEnumerable<string>>> Get()
         {
             try
