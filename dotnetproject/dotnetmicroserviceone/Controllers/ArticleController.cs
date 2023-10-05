@@ -22,7 +22,15 @@ namespace dotnetmicroserviceone.Controllers
         {
             try
             {
-                
+                var data=await _context.articles.ToListAsync();
+                if(data!=null)
+                {
+                    return Ok(data);
+                }
+                else
+                {
+                    return NotFound(null);
+                }
             }
             catch (System.Exception)
             {
@@ -30,6 +38,31 @@ namespace dotnetmicroserviceone.Controllers
                 throw;
             }
         }
+
+        [HttpGet("id")]
+        public async Task<ActionResult<Article>> GetArticleById(int id)
+        {
+            try
+            {
+                var data =await _context.articles.FirstOrDefaultAsync(u=>u.ArticleID==id);
+                if(data!=null)
+                {
+                    return Ok(data);
+                }
+                else
+                {
+                    return NotFound(null);
+                }
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+        }
+
+        [HttpPost]
+        public async Task
 
     }
 }
