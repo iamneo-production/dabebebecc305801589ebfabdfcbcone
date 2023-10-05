@@ -17,5 +17,19 @@ namespace dotnetmicroserviceone.Controllers
             _context = context;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Article>>> GetAllArticles()
+        {
+            try
+            {
+                
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+        }
+
     }
 }
