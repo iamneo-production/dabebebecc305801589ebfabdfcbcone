@@ -1,72 +1,72 @@
 {
     "Routes": [
     {
-        "DownstreamPathTemplate":"/Article",
-        "DownstreamScheme":"http",
+        "DownstreamPathTemplate":"/api/Article",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
-                "Port":8080
+                "Port":443
             }
         ],
         "UpstreamPathTemplate":"/gateway/Article",
         "UpstreamHttpMethod":["GET"]
     },
     {
-        "DownstreamPathTemplate":"/Article",
-        "DownstreamScheme":"http",
+        "DownstreamPathTemplate":"/api/Article",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
                 "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
-                "Port":8080
+                "Port":443
             }
         ],
         "UpstreamPathTemplate":"/gateway/Article/{id}",
         "UpstreamHttpMethod":"GET"
     },
     {
-        "DownstreamPathTemplate":"/Review",
-        "DownstreamScheme":"http",
+        "DownstreamPathTemplate":"/api/Review",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
-                "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
-                "Port":8081
+                "Host":"8081-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
+                "Port":443
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review",
         "UpstreamHttpMethod":"Get"
     },
     {
-        "DownstreamPathTemplate":"/Review",
-        "DownstreamScheme":"http",
+        "DownstreamPathTemplate":"/api/Review",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
-                "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
-                "Port":8081
+                "Host":"8081-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
+                "Port":443
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review",
         "UpstreamHttpMethod":["GET"]
     },
     {
-        "DownstreamPathTemplate":"/Review",
-        "DownstreamScheme":"http",
+        "DownstreamPathTemplate":"/api/Review",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
-                "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
-                "Port":8081
+                "Host":"8081-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
+                "Port":443
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review/ReviewerNames",
         "UpstreamHttpMethod":"GET"
     },
     {
-        "DownstreamPathTemplate":"/Review",
-        "DownstreamScheme":"http",
+        "DownstreamPathTemplate":"/api/Review",
+        "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
-                "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
-                "Port":8081
+                "Host":"8081-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
+                "Port":443
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review/{id}",
@@ -74,9 +74,7 @@
     }
 
 
-],
-"GlobalConfiguration":{
-    "BaseUrl":"https://ide-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io/proxy/5161/"
-}
+]
+
 
 }
