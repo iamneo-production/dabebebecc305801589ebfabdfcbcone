@@ -5,20 +5,20 @@
         "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
-                "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
-                "Port":443
+                "Host":"localhost",
+                "Port":8080
             }
         ],
         "UpstreamPathTemplate":"/gateway/Article",
-        "UpstreamHttpMethod":["GET"]
+        "UpstreamHttpMethod":["POST","GET"]
     },
     {
         "DownstreamPathTemplate":"/api/Article",
         "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
-                "Host":"8080-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
-                "Port":443
+                "Host":"localhost",
+                "Port":8080
             }
         ],
         "UpstreamPathTemplate":"/gateway/Article/{id}",
@@ -29,8 +29,8 @@
         "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
-                "Host":"8081-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
-                "Port":443
+                "Host":"localhost",
+                "Port":8081
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review",
@@ -41,20 +41,20 @@
         "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
-                "Host":"8081-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
-                "Port":443
+                "Host":"localhost",
+                "Port":8081
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review",
-        "UpstreamHttpMethod":["GET"]
+        "UpstreamHttpMethod":["POST","GET"]
     },
     {
-        "DownstreamPathTemplate":"/api/Review",
+        "DownstreamPathTemplate":"/api/Review/",
         "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
-                "Host":"8081-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
-                "Port":443
+                "Host":"localhost",
+                "Port":8081
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review/ReviewerNames",
@@ -65,16 +65,15 @@
         "DownstreamScheme":"https",
         "DownstreamHostAndPorts":[
             {
-                "Host":"8081-dabebebecc305801589ebfabdfcbcone.premiumproject.examly.io",
-                "Port":443
+                "Host":"localhost",
+                "Port":8081
             }
         ],
         "UpstreamPathTemplate":"/gateway/Review/{id}",
-        "UpstreamHttpMethod":"DELETE"
+        "UpstreamHttpMethod":["DELETE"]
     }
 
 
 ]
-
 
 }
